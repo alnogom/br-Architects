@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #FFFFFF;
+    letter-spacing: 3px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+header span{
+    font-weight: 600;
+}
+header a{
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+    transition: all 10ms ease ;
+}
+header .links {
+    padding-right: 20px;
+}
+header a:hover{
+    background-color: rgb(184, 178, 178);
+    border: 1PX solid transparent;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+
+
+.cruoser{
+    height: 100vh;
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://www.w3schools.com/w3images/architect.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+    animation: image 2s ease 0s infinite alternate forwards;
+    margin: 0 10PX;  
+}
+@keyframes image {
+    0%{
+        background-image: url(https://www.w3schools.com/w3images/architect.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    100%{
+        background-image: url(https://www.w3schools.com/w3images/map.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+
+    }
+}
+.cruoser div h2{
+    color: white;
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 50px;
+}
+.cruoser div h2 span {
+    background-color: #343434;
+    padding: 10px 20px;
+}
+
+
+
+.Projects{
+    margin-top: 50px;
+}
+.Projects h2{
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+.Projects .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Projects h4{
+    color: white;
+    background-color: black;
+    width: fit-content;
+    padding: 10px 20px;
+}
+.Projects .card{
+    margin: 10px 20px;
+    width: 20em;
+    height: 15em;
+}
+.Projects .card1{
+    background-image: url(https://www.w3schools.com/w3images/house5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Projects .card2{
+    background-image: url(https://www.w3schools.com/w3images/house2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Projects .card3{
+    background-image: url(https://www.w3schools.com/w3images/house3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Projects .card4{
+    background-image: url(https://www.w3schools.com/w3images/house4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Projects .card5{
+    background-image: url(https://www.w3schools.com/w3images/house2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Projects .card6{
+    background-image: url(https://www.w3schools.com/w3images/house5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Projects .card7{
+    background-image: url(https://www.w3schools.com/w3images/house4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Projects .card8{
+    background-image: url(https://www.w3schools.com/w3images/house3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.About{
+    margin-top: 50px;
+}
+.About h2{
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    font-size: 30px;
+}
+.About .card-2 img{
+    filter:grayscale(70%);
+}
+.About p {
+    font-size: 20px;
+}
+.About .job{
+    color: gray;
+}
+.About .container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.About .card-2{
+    display: flex;
+    flex-direction: column;
+    width: 21.5em;
+    height: 450px;
+    margin: 10px 10px;
+    gap: 1em;   
+}
+.About button{
+    border: none;
+    padding: 15px 50px;
+    font-size: 16px;
+}
+.About button:hover{
+    cursor:pointer;
+    background-color: gray;
+}
+
+
+
+.Contact{
+    margin-top: 30px;
+}
+.Contact .text{
+    margin-bottom: 10px;
+}
+.Contact p{
+    font-weight:200;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    margin-left: 40px;
+}
+div .input {
+    width: 100%;
+    padding:10px 10px;
+    margin-bottom: 15px;
+}
+.btn{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    font-size: 15px;
+}
+.btn:hover{
+    color: black;
+    background-color: rgb(213, 207, 207);
+}
+
+
+
+footer{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 40px 50px;
+    margin-top: 6rem;
+}
+footer a{
+    color: white;
+    text-decoration:underline solid white;
+}
+footer a:hover{
+    color: green;
+    text-decoration:underline solid green;
+}
+
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: gray; 
+  }
+
+
+@media only screen and (max-width:600px) {   
+    header a{
+        white-space: nowrap;
+    }
+    header .links{
+        visibility: hidden;
+    }   
+
+
+    .Projects .card1{
+        width: 100vw;
+        height: 50vh;
+        background-image: url(https://www.w3schools.com/w3images/house5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .Projects .card2{
+        width: 100vw;
+        height: 50vh;
+        background-image: url(https://www.w3schools.com/w3images/house2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .Projects .card3{
+        width: 100vw;
+        height: 50vh;
+        background-image: url(https://www.w3schools.com/w3images/house3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .Projects .card4{
+        width: 100vw;
+        height: 50vh;
+        background-image: url(https://www.w3schools.com/w3images/house4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .Projects .card5{
+        width: 100vw;
+        height: 50vh;
+        background-image: url(https://www.w3schools.com/w3images/house2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .Projects .card6{
+        width: 100vw;
+        height: 50vh;
+        background-image: url(https://www.w3schools.com/w3images/house5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .Projects .card7{
+        width: 100vw;
+        height: 50vh;
+        background-image: url(https://www.w3schools.com/w3images/house4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .Projects .card8{
+        width: 100vw;
+        height: 50vh;
+        background-image: url(https://www.w3schools.com/w3images/house3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .About .card-2{
+        width: 90vw;
+        height: 70vh;
+        margin-bottom: 30px;
+        padding: 20px 0px;  
+    }
+}
